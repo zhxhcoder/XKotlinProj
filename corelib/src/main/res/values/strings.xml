@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">corelib</string>
+    <string name="app_name">基础库</string>
+    <string name="load_failed">加载失败</string>
+    <string name="loading">加载...</string>
 </resources>
