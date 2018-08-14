@@ -1,7 +1,9 @@
 package com.zhxh.xkotlin
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.zhxh.xkotlin.mvp.view.MainActivity
 import kotlinx.android.synthetic.main.activity_jni.*
 
 class JniActivity : AppCompatActivity() {
@@ -12,6 +14,10 @@ class JniActivity : AppCompatActivity() {
 
         // Example of a call to a native method
         sample_text.text = stringFromJNI()
+
+
+        sample_text.setOnClickListener { startActivity(Intent(this@JniActivity, MainActivity::class.java)) }
+
     }
 
     /**
